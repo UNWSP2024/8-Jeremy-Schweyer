@@ -8,10 +8,16 @@
 # Start your changes on line 13
 
 def word_separator(sentence):
-
     new_sentence = ""
     #    Add your logic here
-
+    sentence = "StopAndSmellTheRoses"
+    new_sentence = new_sentence + sentence[0]
+    for i in range(1, len(sentence)):
+        rose = sentence[i]
+        if rose.isupper():
+            rose = rose.lower()
+            new_sentence = new_sentence + ' '
+        new_sentence = new_sentence + rose
     return new_sentence.strip()
 
 # Example usage
