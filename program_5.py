@@ -18,7 +18,7 @@ course_catalog = {}
 
 
 keep_adding = 'y'
-while keep_adding.lower() == 'y':
+while keep_adding == 'y':
     add(course_catalog)
     keep_adding = input("Would you like to add another course? (y/n): ")
 
